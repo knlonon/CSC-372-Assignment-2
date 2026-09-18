@@ -1,0 +1,216 @@
+/*
+  Name: Keith
+  Date: 09.18.2026
+  CSC 372-01
+
+  This stylesheet provides layout, typography, flexbox, grid,
+  and responsive design for the Campus Event Guide project.
+*/
+
+/* generic selectors */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #f7fafc;
+  color: #1f2933;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* headings */
+h1, h2, h3 {
+  color: #0b3c5d;
+}
+
+/* header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b3c5d;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+.branding {
+  max-width: 60%;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.tagline {
+  margin-top: 0.25rem;
+}
+
+/* navigation */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  background-color: #e1efff;
+}
+
+.hero-content {
+  max-width: 32rem;
+}
+
+.hero-image {
+  max-width: 24rem;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #f6b21b;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #1f2933;
+  font-weight: 600;
+}
+
+/* events grid */
+.events-section {
+  padding: 2rem 1.5rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-card {
+  background-color: #fff;
+  border: 1px solid #d2d6dc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.event-card.wide {
+  grid-column: span 2;
+}
+
+.event-meta {
+  color: #52606d;
+  font-size: 0.9rem;
+}
+
+/* about */
+.about-section {
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+}
+
+/* event page hero */
+.event-hero {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  background-color: #e1efff;
+}
+
+.event-intro {
+  max-width: 32rem;
+}
+
+.event-hero-image {
+  max-width: 24rem;
+}
+
+/* event layout grid */
+.event-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+.event-main,
+.event-sidebar {
+  background-color: #fff;
+  border: 1px solid #d2d6dc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* related events */
+.related-events-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.related-card {
+  flex: 1 1 220px;
+  background-color: #fff;
+  border: 1px solid #d2d6dc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* footer */
+.site-footer {
+  background-color: #0b3c5d;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .hero,
+  .event-hero {
+    flex-direction: column;
+  }
+
+  .event-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+  }
+}

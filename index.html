@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+  Name: Keith
+  Date: 09.18.2026
+  CSC 372-01
+
+  This is the index.html home page for my Campus Event Guide project.
+  It includes a hero section, an upcoming events grid, an about section,
+  and navigation linking to the featured event page.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uncg university – campus event guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="branding">
+      <a href="index.html" class="logo">uncg university</a>
+      <p class="tagline">your hub for campus events and student life.</p>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#upcoming-events">upcoming events</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="event.html">featured event</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>campus event guide</h1>
+        <p>explore concerts, workshops, service projects, and more.</p>
+        <a href="#upcoming-events" class="btn">browse upcoming events</a>
+      </div>
+
+      <figure class="hero-image">
+        <img src="images/hero-campus.jpg" alt="students gathered at the oakridge university student center">
+        <figcaption>student center plaza</figcaption>
+      </figure>
+    </section>
+
+    <section id="upcoming-events" class="events-section">
+      <h2>upcoming events</h2>
+
+      <div class="events-grid">
+        <!-- event card 1 -->
+        <article class="event-card wide">
+          <figure>
+            <img src="images/event-hackathon.jpg" alt="students collaborating at laptops during a hackathon">
+            <figcaption>overnight coding challenge</figcaption>
+          </figure>
+          <h3>midnight code hackathon</h3>
+          <p class="event-meta">
+            <time datetime="2026-09-26T18:00">sat, sept 26 · 6:00 pm</time><br>
+            innovation lab · tech & innovation
+          </p>
+          <p>build solutions to real campus problems with mentors and snacks.</p>
+          <a href="event.html" class="event-link">view details</a>
+        </article>
+
+        <!-- event card 2 -->
+        <article class="event-card">
+          <figure>
+            <img src="images/event-music-night.jpg" alt="student band performing on stage">
+            <figcaption>live music</figcaption>
+          </figure>
+          <h3>union music night</h3>
+          <p class="event-meta">
+            <time datetime="2026-09-24T19:00">thu, sept 24 · 7:00 pm</time><br>
+            student union theater · arts & culture
+          </p>
+          <p>enjoy performances from campus bands and vocalists.</p>
+          <a href="event.html" class="event-link">view details</a>
+        </article>
+
+        <!-- event card 3 -->
+        <article class="event-card">
+          <figure>
+            <img src="images/event-club-fair.jpg" alt="students visiting tables at a club fair">
+            <figcaption>student organizations</figcaption>
+          </figure>
+          <h3>fall involvement fair</h3>
+          <p class="event-meta">
+            <time datetime="2026-09-22T11:00">tue, sept 22 · 11:00 am</time><br>
+            quad lawn · student organizations
+          </p>
+          <p>meet student clubs, academic societies, and service groups.</p>
+          <a href="event.html" class="event-link">view details</a>
+        </article>
+
+        <!-- event card 4 -->
+        <article class="event-card wide">
+          <figure>
+            <img src="images/event-film-fest.jpg" alt="students watching an outdoor film screening">
+            <figcaption>film festival</figcaption>
+          </figure>
+          <h3>campus film fest</h3>
+          <p class="event-meta">
+            <time datetime="2026-09-30T20:00">wed, sept 30 · 8:00 pm</time><br>
+            east lawn · arts & culture
+          </p>
+          <p>short films created by uncg students.</p>
+          <a href="event.html" class="event-link">view details</a>
+        </article>
+
+        <!-- event card 5 -->
+        <article class="event-card">
+          <figure>
+            <img src="images/event-service-day.jpg" alt="students planting trees during a service project">
+            <figcaption>community service</figcaption>
+          </figure>
+          <h3>oakridge service day</h3>
+          <p class="event-meta">
+            <time datetime="2026-10-03T09:00">sat, oct 3 · 9:00 am</time><br>
+            various sites · service & outreach
+          </p>
+          <p>join teams heading into the community for impact projects.</p>
+          <a href="event.html" class="event-link">view details</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>about the campus event guide</h2>
+      <p>the office of student engagement maintains this guide to help students connect with campus life.</p>
+      <p>events support academic, social, and personal growth.</p>
+
+      <ul class="benefits-list">
+        <li>discover events tailored to your interests.</li>
+        <li>stay informed about registration and locations.</li>
+        <li>find leadership, service, and networking opportunities.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 uncg university · office of student engagement</p>
+    <p>contact: <a href="mailto:engagement@uncg.edu">engagement@uncg.edu</a></p>
+
+    <nav class="footer-nav">
+      <a href="#about">about</a>
+      <a href="#upcoming-events">events</a>
+      <a href="event.html">featured event</a>
+    </nav>
+  </footer>
+</body>
+</html>

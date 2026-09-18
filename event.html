@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+  Name: Keith
+  Date: 09.18.2026
+  CSC 372-01
+
+  This is the event.html page for the Campus Event Guide project.
+  It displays the featured event with a two-column layout, sidebar,
+  related events, and shared navigation.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>midnight code hackathon – event details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header"># UNCG Campus Event Guide  
+
+    <div class="branding">
+      <a href="index.html" class="logo"> uncg university</a>
+      <p class="tagline">your hub for campus events and student life.</p>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="index.html#upcoming-events">upcoming events</a></li>
+        <li><a href="index.html#about">about</a></li>
+        <li><a href="event.html">featured event</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="event-hero">
+      <div class="event-intro">
+        <h1>midnight code hackathon</h1>
+        <p class="event-category">tech & innovation</p>
+        <p class="event-meta">
+          <time datetime="2026-09-26T18:00">sat, sept 26 · 6:00 pm – 3:00 am</time><br>
+          innovation lab · engineering building
+        </p>
+        <p>join students for an overnight hackathon focused on solving campus challenges.</p>
+      </div>
+
+      <figure class="event-hero-image">
+        <img src="images/event-hackathon.jpg" alt="students working together on laptops during a hackathon">
+        <figcaption>teams collaborating in the innovation lab</figcaption>
+      </figure>
+    </section>
+
+    <section class="event-layout">
+      <div class="event-main">
+        <h2>event overview</h2>
+        <p>students from all majors collaborate on creative solutions to campus issues.</p>
+
+        <h3>what to expect</h3>
+        <ul>
+          <li>team formation and brainstorming</li>
+          <li>mentorship from faculty and industry</li>
+          <li>late-night snacks and quiet work zones</li>
+        </ul>
+
+        <h3>schedule</h3>
+        <ol>
+          <li><strong>6:00 pm</strong> – check-in</li>
+          <li><strong>7:00 pm</strong> – problem pitches</li>
+          <li><strong>8:00 pm – 2:00 am</strong> – build & iterate</li>
+          <li><strong>2:00 am – 3:00 am</strong> – demos & judging</li>
+        </ol>
+
+        <h3>accessibility</h3>
+        <p>the innovation lab is wheelchair accessible. quiet spaces available.</p>
+      </div>
+
+      <aside class="event-sidebar">
+        <h2>event details</h2>
+        <p><strong>date:</strong> <time datetime="2026-09-26">sept 26, 2026</time></p>
+        <p><strong>time:</strong> 6:00 pm – 3:00 am</p>
+        <p><strong>location:</strong> innovation lab</p>
+        <p><strong>organizer:</strong> student engagement & cs club</p>
+        <p><strong>admission:</strong> free</p>
+        <a href="#" class="btn register-btn">register now</a>
+      </aside>
+    </section>
+
+    <section class="related-events">
+      <h2>related events</h2>
+
+      <div class="related-events-list">
+        <article class="related-card">
+          <h3>intro to ux design workshop</h3>
+          <p><time datetime="2026-10-01T17:00">oct 1 · 5:00 pm</time></p>
+          <p>design lab · design society</p>
+        </article>
+
+        <article class="related-card">
+          <h3>women in tech networking night</h3>
+          <p><time datetime="2026-10-05T18:30">oct 5 · 6:30 pm</time></p>
+          <p>student union lounge · wit</p>
+        </article>
+
+        <article class="related-card">
+          <h3>data science for social good</h3>
+          <p><time datetime="2026-10-10T16:00">oct 10 · 4:00 pm</time></p>
+          <p>library collaboration space · analytics club</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 uncg university</p>
+    <p>contact: <a href="mailto:engagement@uncg.edu">engagement@uncg.edu</a></p>
+
+    <nav class="footer-nav">
+      <a href="index.html">home</a>
+      <a href="index.html#upcoming-events">events</a>
+      <a href="event.html">featured event</a>
+    </nav>
+  </footer>
+</body>
+</html>
